@@ -38,7 +38,6 @@ const selectNode = (node) => {
 				<div class="children">
 					<div class="title">Элементы:</div>
 					<input type="text" v-model="searchInput" :placeholder="'Введите название...'">
-					<button>Искать</button>
 					<select v-model="sortOption">
 						<option v-for="option in sortOptions" :key="option.id" :value="option">{{ option.name }}</option>
 					</select>
@@ -80,18 +79,6 @@ const selectNode = (node) => {
 		height: 40px;
 		padding: 10px;
 		border-radius: 10px;
-	}
-	
-	button {
-		height: 40px;
-		padding: 0 20px;
-		border-radius: 10px;
-		background-color: $blue1;
-		cursor: pointer;
-		
-		&:hover {
-			background-color: $blue2;
-		}
 	}
 	
 	select {
